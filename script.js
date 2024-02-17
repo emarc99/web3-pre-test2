@@ -1,3 +1,4 @@
+// This section contains the database of questions and answers
 const questions =  [
 	{
     question: "What does HTML stand for?",
@@ -191,22 +192,26 @@ const questions =  [
 }
 ];
 
+// This section contains the variables declaration and initialization 
 const questionEl = document.getElementById("question");
 const ansBtns = document.getElementById("answer-btns");
 const nxtBtn = document.getElementById("next-btn");
 const timeCount = document.getElementById("time-val");
 const timeUp = document.querySelector(".time-label");
+const questCounter = document.querySelector(".totalQuest");
 
 let currentQuestionIndex = 0;
 let score = 0;
 let timeInitValue = 15;
 
+// This section contains the all the functions required for our dynamic website
 function startQuiz() {
 	currentQuestionIndex = 0;
 	score = 0;
 	timeInitValue = 15;
 	nxtBtn.innerHTML = "Next";
 	showQuestion();
+	questionCounter(1);
 	startTimer(timeInitValue);
 	timeUp.textContent = "Time Remaining";
 	timeUp.style.color = "#000";
@@ -229,8 +234,6 @@ function showQuestion() {
 		button.addEventListener("click", selectAnswer);
 	});
 }
-
-
 
 function resetState() {
 	nxtBtn.style.display = "none";
@@ -262,10 +265,10 @@ function showScore() {
 	resetState();
 	clearInterval(counter);
 	timeCount.textContent = "00";
-	if(score >5) {
+	if(score > 20) {
 		questionEl.innerHTML = `Congrats! Excellent performance, Genius. You scored ${score} out of ${questions.length}!`;
 	}
-	else if(score >2) {
+	else if(score > 10) {
 		questionEl.innerHTML = `Nice! You scored ${score} out of ${questions.length}!`;
 	}
 	else {
@@ -280,6 +283,7 @@ function handleNextBtn() {
 	currentQuestionIndex++;
 	if(currentQuestionIndex < questions.length){
 		showQuestion();
+		questionCounter(currentQuestionIndex + 1);
 		clearInterval(counter);
 		startTimer(timeInitValue);
 		timeUp.textContent = "Time Remaining";
@@ -289,15 +293,6 @@ function handleNextBtn() {
 		showScore();
 	}
 };
-
-nxtBtn.addEventListener("click", ()=> {
-	if(currentQuestionIndex < questions.length){
-		handleNextBtn();
-	}
-	else{
-		startQuiz();
-	}
-});
 
 function startTimer(time) {
 	counter = setInterval(timer, 1000);
@@ -326,4 +321,20 @@ function startTimer(time) {
 	}
 }
 
+function questionCounter(index){
+    let totalQuestionCounter = `<p>${index} of ${questions.length} Questions</p>`;
+    questCounter.innerHTML = totalQuestionCounter;  //adding new span tag inside bottom_ques_counter
+}
+
+// This code listens for when Next or Play Again button is clicked
+nxtBtn.addEventListener("click", ()=> {
+	if(currentQuestionIndex < questions.length){
+		handleNextBtn();
+	}
+	else{
+		startQuiz();
+	}
+});
+
+// This function is called by default on page load
 startQuiz();
