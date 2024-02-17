@@ -1,5 +1,131 @@
 const questions =  [
 	{
+    question: "What does HTML stand for?",
+    answers: [
+        { text: "Hypertext Markup Language", correct: true },
+        { text: "Hyperlink and Text Markup Language", correct: false },
+        { text: "High-Level Text Markup Language", correct: false },
+        { text: "Home Tool Markup Language", correct: false }
+    ]
+},
+	{
+    question: "How can you select an element with id 'myElement' in CSS?",
+    answers: [
+        { text: "#myElement", correct: true },
+        { text: ".myElement", correct: false },
+        { text: "element.myElement", correct: false },
+        { text: "id.myElement", correct: false }
+    ]
+},
+	{
+    question: "What is the purpose of 'const' in JavaScript?",
+    answers: [
+        { text: "To declare a constant variable", correct: true },
+        { text: "To create a new function", correct: false },
+        { text: "To import external libraries", correct: false },
+        { text: "To define a loop", correct: false }
+    ]
+},
+	{
+    question: "What is the main goal of responsive web design?",
+    answers: [
+        { text: "To make websites load faster", correct: false },
+        { text: "To create visually appealing designs", correct: false },
+        { text: "To ensure a consistent user experience across devices", correct: true },
+        { text: "To improve SEO ranking", correct: false }
+    ]
+},
+	{
+    question: "Which tool is commonly used for version control in web development?",
+    answers: [
+        { text: "Git", correct: true },
+        { text: "Adobe Photoshop", correct: false },
+        { text: "MySQL", correct: false },
+        { text: "Node.js", correct: false }
+    ]
+},
+	{
+    question: "What does API stand for?",
+    answers: [
+        { text: "Application Programming Interface", correct: true },
+        { text: "Advanced Programming Interface", correct: false },
+        { text: "Automated Process Integration", correct: false },
+        { text: "Application Process Integration", correct: false }
+    ]
+},
+	{
+    question: "What is Cross-Site Scripting (XSS)?",
+    answers: [
+        { text: "A scripting language for websites", correct: false },
+        { text: "A security vulnerability where attackers inject malicious scripts into web pages", correct: true },
+        { text: "A new web development framework", correct: false },
+        { text: "A tool for automated testing", correct: false }
+    ]
+},
+	{
+    question: "Which framework is written in TypeScript and developed by Google?",
+    answers: [
+        { text: "React", correct: false },
+        { text: "Angular", correct: true },
+        { text: "Vue.js", correct: false },
+        { text: "Bootstrap", correct: false }
+    ]
+},
+	{
+    question: "What does Node.js use for package management?",
+    answers: [
+        { text: "NPM (Node Package Manager)", correct: true },
+        { text: "PIP (Python Install Package)", correct: false },
+        { text: "Composer", correct: false },
+        { text: "Gradle", correct: false }
+    ]
+},
+	{
+    question: "Which database is known for its document-oriented structure?",
+    answers: [
+        { text: "MySQL", correct: false },
+        { text: "MongoDB", correct: true },
+        { text: "SQLite", correct: false },
+        { text: "PostgreSQL", correct: false }
+    ]
+},
+	{
+    question: "What is the purpose of a domain name?",
+    answers: [
+        { text: "To store data on the server", correct: false },
+        { text: "To identify a website on the internet", correct: true },
+        { text: "To design web pages", correct: false },
+        { text: "To secure a website", correct: false }
+    ]
+},
+	{
+    question: "Why is it important to consider web accessibility in development?",
+    answers: [
+        { text: "To increase website speed", correct: false },
+        { text: "To improve search engine ranking", correct: false },
+        { text: "To ensure equal access for people with disabilities", correct: true },
+        { text: "To reduce server load", correct: false }
+    ]
+},
+	{
+    question: "What is a CDN (Content Delivery Network) used for?",
+    answers: [
+        { text: "To create dynamic web content", correct: false },
+        { text: "To optimize website performance by delivering content from servers closer to the user", correct: true },
+        { text: "To secure websites from cyber attacks", correct: false },
+        { text: "To manage databases", correct: false }
+    ]
+},
+	{
+    question: "What is a key characteristic of Progressive Web Apps?",
+    answers: [
+        { text: "They require installation from an app store", correct: false },
+	{ text: "They work only on specific browsers", correct: false },
+	{ text: "They provide an app-like experience with offline functionality", correct: true },
+	{ text: "They are only accessible on desktop devices", correct: false }
+    ]
+},
+	{
 		question: "Which is the largest animal in the World?",
 		answers: [
 			{ text:"Shark", correct: false},
@@ -53,7 +179,16 @@ const questions =  [
 			{ text:"let x = 2, y = x*x;", correct: false},
 			{ text:"const greeting = 'hello' + name; ", correct: false}		
 	    ]
-	}
+	},
+	{
+    question: "What is the main benefit of using cloud computing?",
+    answers: [
+        { text: "Faster internet speed", correct: false },
+        { text: "Increased physical security of data", correct: false },
+        { text: "Cost-effective scalability and flexibility", correct: true },
+        { text: "Reduced need for antivirus software", correct: false }
+    ]
+}
 ];
 
 const questionEl = document.getElementById("question");
