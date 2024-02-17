@@ -40,10 +40,8 @@ body{
     /* text-align: center;*/
 }
 
-.timer{
+.counter-container{
 	display: flex;
-	flex-direction: column;
-  	align-content: flex-end;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
@@ -52,10 +50,22 @@ body{
 	border-radius: 5px;
 	padding: 5px 8px;
 }
+.totalQuest{
+	font-size: 13px;
+	font-weight: 700;
+}
+.timer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;	
+}
+
 .time-label{
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 17px;
 	user-select: none;
+	margin-right: 10px;
 }
 .time-val{
 	font-weight: 500;
