@@ -5,8 +5,7 @@ const questions =  [
     answers: [
         { text: "Hypertext Markup Language", correct: true },
         { text: "Hyperlink and Text Markup Language", correct: false },
-        { text: "High-Level Text Markup Language", correct: false },
-        { text: "Home Tool Markup Language", correct: false }
+        { text: "High-Level Text Markup Language", correct: false }
     ]
 },
 	{
@@ -14,7 +13,6 @@ const questions =  [
     answers: [
         { text: "#myElement", correct: true },
         { text: ".myElement", correct: false },
-        { text: "element.myElement", correct: false },
         { text: "id.myElement", correct: false }
     ]
 },
@@ -23,7 +21,6 @@ const questions =  [
     answers: [
         { text: "To declare a constant variable", correct: true },
         { text: "To create a new function", correct: false },
-        { text: "To import external libraries", correct: false },
         { text: "To define a loop", correct: false }
     ]
 },
@@ -32,15 +29,13 @@ const questions =  [
     answers: [
         { text: "To make websites load faster", correct: false },
         { text: "To create visually appealing designs", correct: false },
-        { text: "To ensure a consistent user experience across devices", correct: true },
-        { text: "To improve SEO ranking", correct: false }
+        { text: "To ensure a consistent user experience across devices", correct: true }
     ]
 },
 	{
     question: "Which tool is commonly used for version control in web development?",
     answers: [
         { text: "Git", correct: true },
-        { text: "Adobe Photoshop", correct: false },
         { text: "MySQL", correct: false },
         { text: "Node.js", correct: false }
     ]
@@ -50,7 +45,6 @@ const questions =  [
     answers: [
         { text: "Application Programming Interface", correct: true },
         { text: "Advanced Programming Interface", correct: false },
-        { text: "Automated Process Integration", correct: false },
         { text: "Application Process Integration", correct: false }
     ]
 },
@@ -59,7 +53,6 @@ const questions =  [
     answers: [
         { text: "A scripting language for websites", correct: false },
         { text: "A security vulnerability where attackers inject malicious scripts into web pages", correct: true },
-        { text: "A new web development framework", correct: false },
         { text: "A tool for automated testing", correct: false }
     ]
 },
@@ -69,7 +62,6 @@ const questions =  [
         { text: "React", correct: false },
         { text: "Angular", correct: true },
         { text: "Vue.js", correct: false },
-        { text: "Bootstrap", correct: false }
     ]
 },
 	{
@@ -77,14 +69,12 @@ const questions =  [
     answers: [
         { text: "NPM (Node Package Manager)", correct: true },
         { text: "PIP (Python Install Package)", correct: false },
-        { text: "Composer", correct: false },
         { text: "Gradle", correct: false }
     ]
 },
 	{
     question: "Which database is known for its document-oriented structure?",
     answers: [
-        { text: "MySQL", correct: false },
         { text: "MongoDB", correct: true },
         { text: "SQLite", correct: false },
         { text: "PostgreSQL", correct: false }
@@ -95,8 +85,7 @@ const questions =  [
     answers: [
         { text: "To store data on the server", correct: false },
         { text: "To identify a website on the internet", correct: true },
-        { text: "To design web pages", correct: false },
-        { text: "To secure a website", correct: false }
+        { text: "To design web pages", correct: false }
     ]
 },
 	{
@@ -104,8 +93,7 @@ const questions =  [
     answers: [
         { text: "To increase website speed", correct: false },
         { text: "To improve search engine ranking", correct: false },
-        { text: "To ensure equal access for people with disabilities", correct: true },
-        { text: "To reduce server load", correct: false }
+        { text: "To ensure equal access for people with disabilities", correct: true }
     ]
 },
 	{
@@ -113,60 +101,12 @@ const questions =  [
     answers: [
         { text: "To create dynamic web content", correct: false },
         { text: "To optimize website performance by delivering content from servers closer to the user", correct: true },
-        { text: "To secure websites from cyber attacks", correct: false },
-        { text: "To manage databases", correct: false }
+        { text: "To secure websites from cyber attacks", correct: false }
     ]
 },
-	{
-    question: "What is a key characteristic of Progressive Web Apps?",
-    answers: [
-        { text: "They require installation from an app store", correct: false },
-	{ text: "They work only on specific browsers", correct: false },
-	{ text: "They provide an app-like experience with offline functionality", correct: true },
-	{ text: "They are only accessible on desktop devices", correct: false }
-    ]
-},
-	{
-		question: "Which is the largest animal in the World?",
-		answers: [
-			{ text:"Shark", correct: false},
-			{ text:"Blue Whale", correct: true},
-			{ text:"Elephant", correct: false},
-			{ text:"Giraffe", correct: false}
-		]
-	},
-	{
-		question: "Which is the smallest country in the World?",
-		answers: [
-			{ text:"Vatican City", correct: true},
-			{ text:"Bhutan", correct: false},
-			{ text:"Nepal", correct: false},
-			{ text:"Shri Lanka", correct: false}		
-		]
-	},
-	{
-		question: "Which is the largest desert in the World?",
-		answers: [
-			{ text:"Kalahari", correct: false},
-			{ text:"Gobi", correct: false},
-			{ text:"Sahara", correct: false},
-			{ text:"Antarctica", correct: true}		
-		]
-	},
-	{
-		question: "Which is the smallest continent in the World?",
-		answers: [
-			{ text:"Asia", correct: false},
-			{ text:"Australia", correct: true},
-			{ text:"Arctic", correct: false},
-			{ text:"Africa", correct: false}		
-	    ]
-	},
-	
 	{
 		question: "Which of the following is an invalid variable name in JavaScript?",
 		answers: [
-			{ text:"user_Response", correct: false},
 			{ text:"userResponseTime44", correct: false},
 			{ text:"user$ResponseTimeLimit", correct: false},
 			{ text:"response@", correct: true}		
@@ -175,21 +115,11 @@ const questions =  [
 	{
 		question: "Which of the following is not a valid statement declaration in JavaScript?",
 		answers: [
-			{ text:"var p, q;", correct: false},
 			{ text:"function i = 0;", correct: true},
 			{ text:"let x = 2, y = x*x;", correct: false},
 			{ text:"const greeting = 'hello' + name; ", correct: false}		
 	    ]
-	},
-	{
-    question: "What is the main benefit of using cloud computing?",
-    answers: [
-        { text: "Faster internet speed", correct: false },
-        { text: "Increased physical security of data", correct: false },
-        { text: "Cost-effective scalability and flexibility", correct: true },
-        { text: "Reduced need for antivirus software", correct: false }
-    ]
-}
+	}
 ];
 
 // This section contains the variables declaration and initialization 
@@ -265,10 +195,10 @@ function showScore() {
 	resetState();
 	clearInterval(counter);
 	timeCount.textContent = "00";
-	if(score > 20) {
+	if(score > 14) {
 		questionEl.innerHTML = `Congrats! Excellent performance, Genius. You scored ${score} out of ${questions.length}!`;
 	}
-	else if(score > 10) {
+	else if(score > 6) {
 		questionEl.innerHTML = `Nice! You scored ${score} out of ${questions.length}!`;
 	}
 	else {
